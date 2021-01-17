@@ -19,7 +19,7 @@ while run.lower()=="siap":
           print (pesan)
           client.send_message('berlatihbot', pesan)
       if minutes == 9:
-        for message in client.iter_messages('berlatihbot', limit=2):
+        for message in client.iter_messages('berlatihbot', limit=1):
           (utils.get_display_name(message.sender), message.message)
           pesan = (message.message)
           print (pesan)
