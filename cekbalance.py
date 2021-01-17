@@ -3,7 +3,7 @@ import time
 from telethon import TelegramClient, sync, events, utils
 api_id = 682610 
 api_hash = '030132b51d598e464419ccee7f20212d' 
-client = TelegramClient('anon', api_id, api_hash).start()
+client = TelegramClient('mbanurul', api_id, api_hash).start()
 seconds= int(0)
 minutes= int(0)
 run = "siap"
