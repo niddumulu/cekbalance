@@ -23,8 +23,9 @@ while run.lower()=="siap":
                 (utils.get_display_name(message.sender), message.message)
                 pesanchannel = (message.message)
                 print (pesanchannel)
+                client.send_message('cekresijnt', pesanchannel)
       if minutes == 2:
         minutes = 0  
-  seconds = (seconds+1)
+  seconds = (seconds+2)
   print (minutes,seconds)
   time.sleep(1)
