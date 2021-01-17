@@ -13,12 +13,17 @@ while run.lower()=="siap":
       minutes = minutes+1
       if minutes == 1:
         print ("ok")
-        for message in client.iter_messages('cekresii', limit=1):
+        for message in client.iter_messages('niddumulu', limit=1):
           (utils.get_display_name(message.sender), message.message)
           pesan = (message.message)
           print (pesan)
-        client.send_message('cekresijnt', pesan)
-      if minutes == 3:
+          if pesan == 1:
+             print ("lanjut ambil resi")
+             for message in client.iter_messages('cekresii', limit=1):
+                (utils.get_display_name(message.sender), message.message)
+                pesanchannel = (message.message)
+                print (pesanchannel)
+      if minutes == 2:
         minutes = 0  
   seconds = (seconds+1)
   print (minutes,seconds)
