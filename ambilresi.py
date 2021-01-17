@@ -8,24 +8,19 @@ seconds= int(0)
 minutes= int(0)
 run = "siap"
 while run.lower()=="siap":
-  if seconds == 59:
+  if seconds == 20:
       seconds = 0
       minutes = minutes+1
       if minutes == 1:
         print ("ok")
-        for message in client.iter_messages('niddumulu', limit=1):
+        for message in client.iter_messages('cekresii', limit=1):
           (utils.get_display_name(message.sender), message.message)
           pesan = (message.message)
           print (pesan)
-          if pesan == 1:
-             print ("lanjut ambil resi")
-             for message in client.iter_messages('cekresii', limit=1):
-                (utils.get_display_name(message.sender), message.message)
-                pesanchannel = (message.message)
-                print (pesanchannel)
-                client.send_message('cekresijnt', pesanchannel)
+          client.send_message('cekresijnt', pesan)
       if minutes == 2:
         minutes = 0  
-  seconds = (seconds+2)
+        run = "off"
+  seconds = (seconds+1)
   print (minutes,seconds)
   time.sleep(1)
