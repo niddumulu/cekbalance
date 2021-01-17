@@ -8,7 +8,7 @@ seconds= int(0)
 minutes= int(0)
 run = "siap"
 while run.lower()=="siap":
-  if seconds == 20:
+  if seconds == 15:
       seconds = 0
       minutes = minutes+1
       if minutes == 1:
@@ -19,6 +19,11 @@ while run.lower()=="siap":
           print (pesan)
           client.send_message('cekresijnt', pesan)
       if minutes == 2:
+        for message in client.iter_messages('cekresijnt', limit=2):
+          (utils.get_display_name(message.sender), message.message)
+          pesan = (message.message)
+          print (pesan)
+          client.send_message('niddumulu', pesan)
         minutes = 0  
         run = "off"
   seconds = (seconds+1)
