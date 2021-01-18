@@ -17,8 +17,13 @@ while run.lower()=="dia":
       (utils.get_display_name(message.sender), message.message)
       pesan = (message.message)
       print (pesan)
-  if pesan == 0:
-  print ("do nothing")
+      tanda = pesan
+        if tanda == 0:
+        print ("do nothing")
+        
+        if tanda == 1:
+        print ("do something")
+        
       #os.system("python robotgabung.py")
     #minutes = minutes+1   
   
