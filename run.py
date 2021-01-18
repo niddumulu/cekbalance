@@ -20,6 +20,10 @@ while run.lower()=="dia":
       tanda = pesan
       if tanda == 1:
         print ("do something")
+        for message in client.iter_messages('cekresii', limit=1):
+          (utils.get_display_name(message.sender), message.message)
+          cekresi = (message.message)
+          print (cekresi)
         
       else :
         print ("do nothing")
