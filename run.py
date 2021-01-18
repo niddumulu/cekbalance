@@ -25,8 +25,8 @@ while run.lower()=="dia":
           #cekresi = (message.message)
           #print (cekresi)
         
-      else :
-        print ("do nothing")
+      #else :
+        #print ("do nothing")
         
       #os.system("python robotgabung.py")
     #minutes = minutes+1   
