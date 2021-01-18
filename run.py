@@ -13,11 +13,11 @@ run = "dia"
 while run.lower()=="dia":
   if seconds == 10:
     seconds = 0
-    print ("cek tanda")
+    #print ("cek tanda")
     for message in client.iter_messages('pohonide', limit=1):
-        (utils.get_display_name(message.sender), message.message)
-         pesan = (message.message)
-         print (pesan)
+      (utils.get_display_name(message.sender), message.message)
+      pesan = (message.message)
+      print (pesan)
       #os.system("python robotgabung.py")
     minutes = minutes+1   
   #os.system('clear')
