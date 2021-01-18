@@ -20,7 +20,7 @@ while run.lower()=="dia":
       #os.system("python robotgabung.py")
     minutes = minutes+1   
   
-  if minutes == 3:
+  if seconds == 20:
     run = "diaa"
   #os.system('clear')
   seconds = (seconds+1)
